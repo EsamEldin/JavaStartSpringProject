@@ -1,4 +1,4 @@
-package com.javaSpring.entity;
+package com.javaSpring.JavaSpring.entity;
 
 import java.util.Date;
 
@@ -9,15 +9,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Getter;
+
 @Entity
 @Table(name="am_banks")
+@Getter
 public class Banks {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
+  private long id;
   
-
+  
   private String title;
   
   private String img;
